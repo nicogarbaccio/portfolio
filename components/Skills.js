@@ -3,10 +3,10 @@ import Image from 'next/image'
 
 function Skills() {
   return (
-    <div className='w-full lg:h-screen p-2'>
+    <div id="skills" className='w-full lg:h-screen p-2'>
         <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
-            <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Skills</p>
-            <h2 className='py-4'>What I can do</h2>
+            {/* <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Skills</p> */}
+            <h2 className='text-md text-[#5651e5] tracking-wider py-4'>Tech Stack</h2>
             {/* Reorganize these into components */}
             <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
                 {/* HTML */}

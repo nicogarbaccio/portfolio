@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
@@ -7,38 +7,41 @@ import { BsFillPersonLinesFill } from 'react-icons/bs';
 
 function Navbar() {
     const [nav, setNav] = useState(false)
-    const handleNav= () => {
+    const [shadow, setShadow] = useState(false)
+    const handleNav = () => {
         setNav(!nav)
     }
 
   return (
-    <div className='fixed w-full h-30 shadow-xl z-[100]'>
+    <div className='bg-[#5651e5] fixed w-full h-30 shadow-xl z-[100] px-4'>
         <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
             {/* <Image src="/../public/assets/NG.jpeg" className='rounded-full' alt="/" width="120" height="50" /> */}
-            <h2 className='py-5 px-3'>Nico Garbaccio</h2>
+            <Link href="/">
+                <h2 className='text-white py-5 px-3 tracking-wider'>Nico Garbaccio</h2>
+            </Link>
             <div>
                 <ul className='hidden md:flex'>
                     <Link href="/">
-                        <li className='ml-10 text-md uppercase hover:border-b'>Home</li>
+                        <li className='text-white ml-10 text-md uppercase hover:border-b'>Home</li>
+                    </Link>
+                    <Link href="/#about">
+                        <li className='text-white ml-10 text-md uppercase hover:border-b'>About</li>
+                    </Link>
+                    <Link href="/#projects">
+                        <li className='text-white ml-10 text-md uppercase hover:border-b'>Projects</li>
+                    </Link>
+                    <Link href="/#experience">
+                        <li className='text-white ml-10 text-md uppercase hover:border-b'>Experience</li>
+                    </Link>
+                    <Link href="/#skills">
+                        <li className='text-white ml-10 text-md uppercase hover:border-b'>Skills</li>
                     </Link>
                     <Link href="/">
-                        <li className='ml-10 text-md uppercase hover:border-b'>About</li>
-                    </Link>
-                    <Link href="/">
-                        <li className='ml-10 text-md uppercase hover:border-b'>Projects</li>
-                    </Link>
-                    <Link href="/">
-                        <li className='ml-10 text-md uppercase hover:border-b'>Experience</li>
-                    </Link>
-                    <Link href="/">
-                        <li className='ml-10 text-md uppercase hover:border-b'>Skills</li>
-                    </Link>
-                    <Link href="/">
-                        <li className='ml-10 text-md uppercase hover:border-b'>Contact</li>
+                        <li className='text-white ml-10 text-md uppercase hover:border-b'>Contact</li>
                     </Link>
                 </ul>
                 <div onClick={handleNav} className='md:hidden'>
-                    <AiOutlineMenu size={25} />
+                    <AiOutlineMenu className='text-white' size={25} />
                 </div>
             </div>
         </div>
@@ -57,7 +60,7 @@ function Navbar() {
                         </div>
                     </div>
                     <div className='border-b border-gray-300 my-4'>
-                        <p className='w-[85%] md:w-[90%]'>Full Stack Developer</p>    
+                        <p className='w-[85%] md:w-[90%]'>Full Stack Software Engineer</p>    
                     </div>
                 </div>
                 <div className='py-4 flex flex-col'>
@@ -65,16 +68,16 @@ function Navbar() {
                         <Link href=''>
                             <li className='py-4 text-sm'>Home</li>
                         </Link>
-                        <Link href=''>
+                        <Link href='/#about'>
                             <li className='py-4 text-sm'>About</li>
                         </Link>
-                        <Link href=''>
+                        <Link href='#/projects'>
                             <li className='py-4 text-sm'>Projects</li>
                         </Link>
-                        <Link href=''>
+                        <Link href='/#experience'>
                             <li className='py-4 text-sm'>Experience</li>
                         </Link>
-                        <Link href=''>
+                        <Link href='/#skills'>
                             <li className='py-4 text-sm'>Skills</li>
                         </Link>
                         <Link href=''>
