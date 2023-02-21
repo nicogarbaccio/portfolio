@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Main from '../components/Main'
-import Navbar from '../components/Navbar'
 import About from '../components/About'
 import Skills from '../components/Skills'
 import Projects from '../components/Projects'
@@ -13,7 +12,6 @@ export default function Home() {
         <meta name="description" content="" />
         <link rel="icon" href="/fav.png" />
       </Head>
-      <Navbar />
       <Main />
       <About />
       <Skills />
