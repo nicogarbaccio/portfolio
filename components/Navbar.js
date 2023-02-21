@@ -14,7 +14,8 @@ function Navbar() {
   return (
     <div className='fixed w-full h-30 shadow-xl z-[100]'>
         <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-            <Image src="/../public/assets/NG.jpeg" className='rounded-full' alt="/" width="120" height="50" />
+            {/* <Image src="/../public/assets/NG.jpeg" className='rounded-full' alt="/" width="120" height="50" /> */}
+            <h2 className='py-5 px-3'>Nico Garbaccio</h2>
             <div>
                 <ul className='hidden md:flex'>
                     <Link href="/">
@@ -49,13 +50,14 @@ function Navbar() {
           }>
                 <div>
                     <div className='flex w-full items-center justify-between'>
-                        <Image src="/../public/assets/NG.jpeg" className='rounded-full' alt="/" width="87" height="35" />
+                        <h2>Nico Garbaccio</h2>
+                        {/* <Image src="/../public/assets/NG.jpeg" className='rounded-full' alt="/" width="87" height="35" /> */}
                         <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                             <AiOutlineClose />
                         </div>
                     </div>
                     <div className='border-b border-gray-300 my-4'>
-                        <p className='w-[85%] md:w-[90%] py-4'>Full Stack Developer</p>    
+                        <p className='w-[85%] md:w-[90%]'>Full Stack Developer</p>    
                     </div>
                 </div>
                 <div className='py-4 flex flex-col'>
