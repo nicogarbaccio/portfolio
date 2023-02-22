@@ -1,11 +1,12 @@
-import Head from 'next/head'
-import Main from '../components/Main'
-import About from '../components/About'
-import Skills from '../components/Skills'
-import Projects from '../components/Projects'
+import Head from "next/head";
+import Main from "../components/Main";
+import About from "../components/About";
+import Skills from "../components/Skills";
+import Projects from "../components/Projects";
+import Experience from "../components/Experience";
 
 export default function Home() {
-  return(
+  return (
     <div>
       <Head>
         <title>Nico Garbaccio | Full Stack Developer</title>
@@ -14,8 +15,9 @@ export default function Home() {
       </Head>
       <Main />
       <About />
-      <Skills />
       <Projects />
+      <Skills />
+      <Experience />
     </div>
-  )
+  );
 }

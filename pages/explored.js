@@ -97,7 +97,7 @@ function explored() {
           </div>
         </div>
         <Link href="/#projects">
-          <p className="underline cursor-pointer">Back</p>
+          <p className="underline cursor-pointer hover:text-[#086788]">Back</p>
         </Link>
       </div>
     </div>

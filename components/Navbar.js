@@ -5,13 +5,12 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
-  const [shadow, setShadow] = useState(false);
   const handleNav = () => {
     setNav(!nav);
   };
 
   return (
-    <div className="bg-[#5651e5] fixed w-full h-30 shadow-xl z-[100] px-4">
+    <div className="bg-[#086788] fixed w-full h-30 shadow-xl z-[100] px-4">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         {/* <Image src="/../public/assets/NG.jpeg" className='rounded-full' alt="/" width="120" height="50" /> */}
         <Link href="/">
@@ -53,7 +52,10 @@ function Navbar() {
             </Link>
           </ul>
           <div onClick={handleNav} className="md:hidden">
-            <AiOutlineMenu className="text-white" size={25} />
+            <AiOutlineMenu
+              className="text-white cursor-pointer hover:scale-105 ease-in duration-200"
+              size={25}
+            />
           </div>
         </div>
       </div>
@@ -77,7 +79,7 @@ function Navbar() {
               {/* <Image src="/../public/assets/NG.jpeg" className='rounded-full' alt="/" width="87" height="35" /> */}
               <div
                 onClick={handleNav}
-                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
+                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-200"
               >
                 <AiOutlineClose />
               </div>
@@ -91,7 +93,7 @@ function Navbar() {
               <Link href="">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-4 text-md"
+                  className="py-4 text-md uppercase hover:text-[#086788]"
                   target="_blank"
                 >
                   Home
@@ -100,7 +102,7 @@ function Navbar() {
               <Link href="/#about">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-4 text-md"
+                  className="py-4 text-md uppercase hover:text-[#086788]"
                   target="_blank"
                 >
                   About
@@ -109,7 +111,7 @@ function Navbar() {
               <Link href="/#projects">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-4 text-md"
+                  className="py-4 text-md uppercase hover:text-[#086788]"
                   target="_blank"
                 >
                   Projects
@@ -118,7 +120,7 @@ function Navbar() {
               <Link href="/#skills">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-4 text-md"
+                  className="py-4 text-md uppercase hover:text-[#086788]"
                   target="_blank"
                 >
                   Skills
@@ -127,7 +129,7 @@ function Navbar() {
               <Link href="/#experience">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-4 text-md"
+                  className="py-4 text-md uppercase hover:text-[#086788]"
                   target="_blank"
                 >
                   Experience
@@ -136,7 +138,7 @@ function Navbar() {
               <Link href="mailto:garbaccio20@gmail.com">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-4 text-md"
+                  className="py-4 text-md uppercase hover:text-[#086788]"
                   target="_blank"
                 >
                   Contact
@@ -144,21 +146,21 @@ function Navbar() {
               </Link>
             </ul>
             <div className="pt-20">
-              <p className="uppercase tracking-widest text-center text-[#5651e5]">
+              <p className="uppercase tracking-widest text-center font-bold text-[#086788]">
                 Let's connect!
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-200">
                   <Link href="https://www.linkedin.com/in/nicogarbaccio/">
                     <FaLinkedinIn />
                   </Link>
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-200">
                   <Link href="https://github.com/nicogarbaccio">
                     <FaGithub />
                   </Link>
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-200">
                   <Link href="mailto:nicogarbaccio@gmail.com">
                     <AiOutlineMail />
                   </Link>
