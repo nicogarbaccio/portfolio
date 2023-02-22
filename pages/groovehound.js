@@ -41,18 +41,18 @@ function groovehound() {
             state.
           </p>
           <a
-            href="https://slouch-e6459.web.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button className="px-8 py-2 mt-4 mr-8">Live Site</button>
-          </a>
-          <a
-            href="https://github.com/nicogarbaccio/slouch"
+            href="https://github.com/nicogarbaccio/groovehound"
             target="_blank"
             rel="noreferrer"
           >
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
+          </a>
+          <a
+            href="https://www.loom.com/share/98d9737320164a4db5673c7f81a60d64"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="px-8 py-2 mt-4 mr-8">Demo</button>
           </a>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">
