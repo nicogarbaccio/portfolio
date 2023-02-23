@@ -45,7 +45,7 @@ function Navbar() {
                 Experience
               </li>
             </Link>
-            <Link href="/">
+            <Link href="mailto:garbaccio20@gmail.com">
               <li className="text-white ml-10 text-md uppercase hover:border-b">
                 Contact
               </li>
