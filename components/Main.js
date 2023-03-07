@@ -14,7 +14,7 @@ function Main() {
           </h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto text-xl">
             <span className="font-semibold text-lg">
-              I'm a full stack software engineer
+              I'm a full stack software engineer, program manager, and educator,
             </span>{" "}
             and recent graduate of Flatiron School. Before pivoting to the tech
             world I spent 6 years in the nonprofit education space, designing
