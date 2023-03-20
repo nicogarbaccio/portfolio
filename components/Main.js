@@ -12,16 +12,9 @@ function Main() {
           <h1 className="py-4 text-gray-700">
             Hey there! I'm <span className="text-[#086788]">Nico</span>!
           </h1>
-          <p className="py-4 text-gray-600 max-w-[70%] m-auto text-xl">
-            <span className="font-semibold text-lg">
-              I'm a full stack software engineer, program manager, and educator,
-            </span>{" "}
-            and recent graduate of Flatiron School. Before pivoting to the tech
-            world I spent 6 years in the nonprofit education space, designing
-            and managing successful youth literacy and technology programs. I'm
-            a strong collaborator and problem-solver with program management and
-            process-improvement expertise. I'm passionate about community,
-            learning and teaching.
+          <p className="py-4 text-gray-600 max-w-[70%] m-auto font-semibold text-lg">
+            I'm a full stack software engineer, educator, curriculum developer,
+            and program manager.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-200">
