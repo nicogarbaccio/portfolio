@@ -43,6 +43,19 @@ function explored() {
             makes it look great and easy to navigate (I especially love how the
             dropdown came out).
           </p>
+          <p className="font-bold mt-5">
+            Note that the site is hosted on Render, so when visiting the live
+            site, it may take a minute to spin up
+          </p>
+          <p className="font-bold mt-5">
+            You can log in as an instructor with the following credentials:
+          </p>
+          <p className="mt-2">
+            <span className="font-bold">Email: </span>demo123@demo.com
+          </p>
+          <p className="mb-2">
+            <span className="font-bold">Password: </span>demo123
+          </p>
           <a
             href="https://explored.onrender.com/"
             target="_blank"
