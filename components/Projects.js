@@ -16,16 +16,16 @@ function Projects() {
         </h2>
         <div className=" grid md:grid-cols-2 gap-8">
           <ProjectItem
-            title="ExplorED"
-            backgroundImg={explored}
-            stack="React | Ruby on Rails"
-            projectUrl="/explored"
-          />
-          <ProjectItem
             title="Stay Awhile"
             backgroundImg={stayawhile}
             stack="React | Next.js"
             projectUrl="/stayawhile"
+          />
+          <ProjectItem
+            title="ExplorED"
+            backgroundImg={explored}
+            stack="React | Ruby on Rails"
+            projectUrl="/explored"
           />
           <ProjectItem
             title="Slouch"

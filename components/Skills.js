@@ -10,6 +10,8 @@ import react from "../public/assets/skills/react.png";
 import ruby from "../public/assets/skills/ruby.png";
 import tailwind from "../public/assets/skills/tailwind.png";
 import typescript from "../public/assets/skills/typescript.png";
+import mongodb from "../public/assets/skills/mongodb.png";
+import python from "../public/assets/skills/python.png";
 
 function Skills() {
   return (
@@ -73,6 +75,17 @@ function Skills() {
               </div>
             </div>
           </div>
+          {/* Python */}
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image alt="/" src={python} width="64" height="64" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Python</h3>
+              </div>
+            </div>
+          </div>
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
@@ -103,16 +116,18 @@ function Skills() {
               </div>
             </div>
           </div>
+          {/* MongoDB */}
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image alt="/" src={tailwind} width="64" height="64" />
+                <Image alt="/" src={mongodb} width="64" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Tailwind</h3>
+                <h3>MongoDB</h3>
               </div>
             </div>
           </div>
+          {/* Firebase */}
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
@@ -123,6 +138,18 @@ function Skills() {
               </div>
             </div>
           </div>
+          {/* Tailwind */}
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image alt="/" src={tailwind} width="64" height="64" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Tailwind CSS</h3>
+              </div>
+            </div>
+          </div>
+          {/* End */}
         </div>
       </div>
     </div>
