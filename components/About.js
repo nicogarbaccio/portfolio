@@ -1,6 +1,6 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 import ng from "../public/assets/NG.jpeg";
 
 function About() {
@@ -12,14 +12,15 @@ function About() {
             About Me
           </h2>
           <p className="py-2 text-gray-600">
-            I'm a full stack software engineer, educator, curriculum developer,
-            and program manager, and recent graduate of Flatiron School.
-            Additionally, I have six years of professional experience in
-            education, designing and managing successful youth literacy and
-            technology programs for nonprofit organizations. I'm a strong
-            collaborator and problem-solver with program management and
-            process-improvement expertise. I'm passionate about community,
-            learning and teaching.
+            I'm a software engineer and educator, working as a QA Engineer at
+            Thinx. I love solving complex problems, and few things make me as
+            happy as bug-free code. I'm also a dedicated member of Code Nation's
+            community, and I support the organization by building curriculum,
+            projects, and tools for students and staff. I graduated from
+            Flatiron School's full stack software engineering program in
+            December 2022, and have a background of six years in the world of
+            nonprofit education. I'm passionate about community, learning, and
+            teaching.
           </p>
           <Link href="/#projects">
             <p className="py-2 text-gray-600 underline cursor-pointer hover:text-[#086788]">
