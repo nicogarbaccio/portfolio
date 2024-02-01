@@ -17,7 +17,7 @@ function ProjectItem({ title, backgroundImg, stack, projectUrl }) {
         </h3>
         <p className="pb-4 pt-2 text-white text-center">{stack}</p>
         <Link href={projectUrl}>
-          <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer hover:scale-105 ease-in duration-200">
+          <p className="text-center py-3 px-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer hover:scale-105 ease-in duration-200">
             More Info
           </p>
         </Link>

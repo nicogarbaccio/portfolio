@@ -12,39 +12,21 @@ import tailwind from "../public/assets/skills/tailwind.png";
 import typescript from "../public/assets/skills/typescript.png";
 import mongodb from "../public/assets/skills/mongodb.png";
 import python from "../public/assets/skills/python.png";
+import playwright from "../public/assets/skills/playwright.png";
+import cypress from "../public/assets/skills/cypress.png";
+import nodejs from "../public/assets/skills/nodejs.png";
+import selenium from "../public/assets/skills/selenium.png";
+import postman from "../public/assets/skills/postman.png";
 
 function Skills() {
   return (
     <div id="skills" className="w-full lg:h-screen p-2">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        {/* <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Skills</p> */}
         <h2 className="text-md text-[#086788] tracking-wider py-4">
           Tech Stack
         </h2>
-        {/* Reorganize these into components */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* HTML */}
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image alt="/" src={html} width="64" height="64" />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>HTML</h3>
-              </div>
-            </div>
-          </div>
-          {/* CSS */}
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image alt="/" src={css} width="64" height="64" />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>CSS</h3>
-              </div>
-            </div>
-          </div>
+          {/* JavaScript */}
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
@@ -55,6 +37,7 @@ function Skills() {
               </div>
             </div>
           </div>
+          {/* TypeScript */}
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
@@ -62,16 +45,6 @@ function Skills() {
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>TypeScript</h3>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto">
-                <Image alt="/" src={react} width="64" height="64" />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>React</h3>
               </div>
             </div>
           </div>
@@ -86,33 +59,36 @@ function Skills() {
               </div>
             </div>
           </div>
+          {/* React */}
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image alt="/" src={ruby} width="64" height="64" />
+                <Image alt="/" src={react} width="64" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Ruby</h3>
+                <h3>React</h3>
               </div>
             </div>
           </div>
+          {/* Tailwind */}
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image alt="/" src={rails} width="64" height="64" />
+                <Image alt="/" src={tailwind} width="64" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Rails</h3>
+                <h3>Tailwind CSS</h3>
               </div>
             </div>
           </div>
+          {/* Node.js */}
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image alt="/" src={postgresql} width="64" height="64" />
+                <Image alt="/" src={nodejs} width="64" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>PostgreSQL</h3>
+                <h3>Node.js</h3>
               </div>
             </div>
           </div>
@@ -127,25 +103,58 @@ function Skills() {
               </div>
             </div>
           </div>
-          {/* Firebase */}
+          {/* Postgres */}
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image alt="/" src={firebase} width="64" height="64" />
+                <Image alt="/" src={postgresql} width="64" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Firebase</h3>
+                <h3>PostgreSQL</h3>
               </div>
             </div>
           </div>
-          {/* Tailwind */}
+          {/* Playwright */}
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image alt="/" src={tailwind} width="64" height="64" />
+                <Image alt="/" src={playwright} width="64" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Tailwind CSS</h3>
+                <h3>Playwright</h3>
+              </div>
+            </div>
+          </div>
+          {/* Cypress */}
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image alt="/" src={cypress} width="64" height="64" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Cypress</h3>
+              </div>
+            </div>
+          </div>
+          {/* Selenium */}
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image alt="/" src={selenium} width="64" height="64" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Selenium</h3>
+              </div>
+            </div>
+          </div>
+          {/* Postman */}
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image alt="/" src={postman} width="64" height="64" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Postman</h3>
               </div>
             </div>
           </div>

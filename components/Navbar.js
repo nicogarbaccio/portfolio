@@ -12,7 +12,6 @@ function Navbar() {
   return (
     <div className="bg-[#086788] fixed w-full h-30 shadow-xl z-[100] px-4">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        {/* <Image src="/../public/assets/NG.jpeg" className='rounded-full' alt="/" width="120" height="50" /> */}
         <Link href="/">
           <h2 className="text-white py-5 px-3 tracking-wider">
             Nico Garbaccio
@@ -28,6 +27,11 @@ function Navbar() {
             <Link href="/#about">
               <li className="text-white ml-10 text-md uppercase hover:border-b">
                 About
+              </li>
+            </Link>
+            <Link href="/#work">
+              <li className="text-white ml-10 text-md uppercase hover:border-b">
+                Work
               </li>
             </Link>
             <Link href="/#projects">
@@ -85,7 +89,7 @@ function Navbar() {
               </div>
             </div>
             <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%]">Full Stack Software Engineer</p>
+              <p className="w-[85%] md:w-[90%]">QA & Software Engineer</p>
             </div>
           </div>
           <div className="py-4 flex flex-col">
@@ -108,13 +112,13 @@ function Navbar() {
                   About
                 </li>
               </Link>
-              <Link href="/#projects">
+              <Link href="/#work">
                 <li
                   onClick={() => setNav(false)}
                   className="py-4 text-md uppercase hover:text-[#086788]"
                   target="_blank"
                 >
-                  Projects
+                  Work
                 </li>
               </Link>
               <Link href="/#skills">

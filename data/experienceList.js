@@ -1,9 +1,17 @@
 export default [
   {
+    title: "Senior Associate, QA Engineer",
+    company: "Thinx",
+    companySite: "http://www.thinx.com",
+    duration: "May 2023 - Present",
+    details:
+      "Collaborated with the QA Manager to develop, refine, and implement innovative QA processes, contributing to the enhancement of Thinx’s testing methodologies. Leveraged a variety of tools – such as Figma, Shopify, Contentful, BrowserStack, and Postman – for meticulous manual testing, and rigorously evaluated the visual display and functionality of Thinx’s website features, ensuring seamless alignment with design, guidelines, specifications, and acceptance criteria. Spearheaded automation initiatives, partnering with the engineering team to deploy effective automated testing using Cypress, establishing a robust end-to-end suite seamlessly integrated into Thinx’s deployment process and significantly cutting down manual testing time. As the final QA checkpoint, upheld high standards before public release, ensuring top-notch website quality.",
+  },
+  {
     title: "Senior Curriculum & Instruction Manager",
     company: "Code Nation",
     companySite: "http://www.codenation.org",
-    duration: "January 2023 - Present",
+    duration: "January 2023 - May 2023",
     details: `Lead the development and continuous improvement of Code Nation’s curriculum, utilizing data-driven analysis and feedback from various stakeholders to ensure lessons, projects, and assessments are industry-aligned and appropriate for different skill levels.
     Manage project timelines and deliverables for curriculum development initiatives, utilizing agile project management methodologies to ensure successful execution and delivery of curriculum materials. Collaborate with regional curriculum leads to host regular training sessions to ensure program staff improve their technical knowledge, internalize activities and projects, and get answers to all curriculum-related questions.`,
   },

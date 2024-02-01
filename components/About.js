@@ -12,19 +12,19 @@ function About() {
             About Me
           </h2>
           <p className="py-2 text-gray-600">
-            I'm a software engineer and educator, working as a QA Engineer at
-            Thinx. I love solving complex problems, and few things make me as
-            happy as bug-free code. I'm also a dedicated member of Code Nation's
-            community, and I support the organization by building curriculum,
-            projects, and tools for students and staff. I graduated from
-            Flatiron School's full stack software engineering program in
-            December 2022, and have a background of six years in the world of
-            nonprofit education. I'm passionate about community, learning, and
-            teaching.
+            I’m a dedicated QA and software engineer with a proven track record
+            in ensuring software quality through a blend of manual testing and
+            automation. I approach testing and development with a holistic
+            perspective, striving for seamless user experiences. My background
+            includes experience in teaching, curriculum development, community
+            engagement, and program management. I'm passionate about fostering
+            community and cultivating a culture of continuous learning and
+            innovation, wherever I may be. If you're committed to building teams
+            that turn ideas into impactful solutions, let's connect!
           </p>
-          <Link href="/#projects">
+          <Link href="/#work">
             <p className="py-2 text-gray-600 underline cursor-pointer hover:text-[#086788]">
-              Check out some of my latest projects!
+              Check out some of my most recent work!
             </p>
           </Link>
         </div>
