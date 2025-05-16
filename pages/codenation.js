@@ -1,10 +1,8 @@
-import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { RiRadioButtonFill } from "react-icons/ri";
 import codenation from "../public/assets/projects/CodeNation.jpg";
 
-function thinx() {
+function codeNation() {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -100,4 +98,4 @@ function thinx() {
   );
 }
 
-export default thinx;
+export default codeNation;

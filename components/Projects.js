@@ -12,7 +12,7 @@ function Projects() {
           <ProjectItem
             title="LetMeBook"
             backgroundImg={letmebook}
-            stack="TypeScript | Express | Node.js | MongoDB"
+            stack="TypeScript | MongoDB | Express | React | Node.js"
             projectUrl="/letmebook"
           />
         </div>
