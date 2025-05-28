@@ -1,4 +1,5 @@
 import letmebook from "../public/assets/projects/LetMeBook.png";
+import sprouthub from "../public/assets/projects/SproutHub.png";
 import ProjectItem from "./ProjectItem";
 
 function Projects() {
@@ -9,6 +10,12 @@ function Projects() {
           Personal Projects
         </h2>
         <div className=" grid md:grid-cols-2 gap-8">
+          <ProjectItem
+            title="SproutHub"
+            backgroundImg={sprouthub}
+            stack="TypeScript | React | Vite | Node.js | Express | Supabase"
+            projectUrl="/sprouthub"
+          />
           <ProjectItem
             title="LetMeBook"
             backgroundImg={letmebook}
