@@ -12,7 +12,7 @@ export default function Home() {
       <Head>
         <title>Nico Garbaccio | Full Stack Developer</title>
         <meta name="description" content="" />
-        <link rel="icon" href="/fav.png" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main />
       <About />

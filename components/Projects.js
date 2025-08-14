@@ -1,5 +1,3 @@
-import letmebook from "../public/assets/projects/LetMeBook.png";
-import sprouthub from "../public/assets/projects/SproutHub.png";
 import ProjectItem from "./ProjectItem";
 
 function Projects() {
@@ -11,16 +9,16 @@ function Projects() {
         </h2>
         <div className=" grid md:grid-cols-2 gap-8">
           <ProjectItem
-            title="SproutHub"
-            backgroundImg={sprouthub}
+            title="sprouthub"
+            backgroundImg="/assets/projects/SproutHub.png"
             stack="TypeScript | React | Vite | Node.js | Express | Supabase"
             projectUrl="/sprouthub"
           />
           <ProjectItem
-            title="LetMeBook"
-            backgroundImg={letmebook}
-            stack="TypeScript | MongoDB | Express | React | Node.js"
-            projectUrl="/letmebook"
+            title="PaperEdge"
+            backgroundImg="/assets/projects/paperedge.png"
+            stack="TypeScript | React | Vite | Node.js | Express | Supabase"
+            projectUrl="/paperedge"
           />
         </div>
       </div>

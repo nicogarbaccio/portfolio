@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { RiRadioButtonFill } from "react-icons/ri";
-import slouchImg from "../public/assets/projects/Slouch.png";
 
 function slouch() {
   return (
@@ -13,7 +12,7 @@ function slouch() {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={slouchImg}
+          src="/assets/projects/Slouch.png"
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">

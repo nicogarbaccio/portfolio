@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import ng from "../public/assets/NG.jpeg";
 
 function About() {
   return (
@@ -27,7 +26,7 @@ function About() {
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           {/* <img className='rounded-xl' src="https://i.imgur.com/9zehaTe.jpg" alt=""></img> */}
-          <Image src={ng} alt="/" />
+          <Image src="/assets/NG.jpeg" alt="/" width={600} height={600} />
         </div>
       </div>
     </div>

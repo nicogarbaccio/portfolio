@@ -1,6 +1,3 @@
-import thinx from "../public/assets/projects/Thinx.png";
-import codenation from "../public/assets/projects/CodeNation.jpg";
-import funnelLeasing from "../public/assets/projects/FunnelLeasing.png";
 import ProjectItem from "./ProjectItem";
 
 function Work() {
@@ -11,17 +8,17 @@ function Work() {
         <div className=" grid md:grid-cols-2 gap-8">
           <ProjectItem
             title="Funnel Leasing"
-            backgroundImg={funnelLeasing}
+            backgroundImg="/assets/projects/FunnelLeasing.png"
             projectUrl="/funnelleasing"
           />
           <ProjectItem
             title="Thinx"
-            backgroundImg={thinx}
+            backgroundImg="/assets/projects/Thinx.png"
             projectUrl="/thinx"
           />
           <ProjectItem
             title="Code Nation"
-            backgroundImg={codenation}
+            backgroundImg="/assets/projects/CodeNation.jpg"
             projectUrl="/codenation"
           />
         </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import { RiRadioButtonFill } from "react-icons/ri";
-import sprouthubImg from "../public/assets/projects/SproutHub.png";
 
 function sprouthub() {
   return (
@@ -12,11 +11,11 @@ function sprouthub() {
           className="absolute z-1"
           fill
           objectFit="cover"
-          src={sprouthubImg}
+          src="/assets/projects/SproutHub.png"
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">LetMeBook</h2>
+          <h2 className="py-2">sprouthub</h2>
           <h3>TypeScript | React | Vite | Node.js | Express | Supabase</h3>
         </div>
       </div>
@@ -25,15 +24,21 @@ function sprouthub() {
         <div className="col-span-4">
           <h2 className="mt-2">Overview</h2>
           <p className="mt-4">
-            SproutHub is a full-stack plant care app built with Vite, React, and
-            TypeScript. The frontend features a responsive, mobile-first UI
-            using Tailwind CSS and shadcn-ui. Supabase powers authentication and
-            backend services, enabling secure user accounts and real-time data.
-            Users can browse a rich plant catalog, track their personal
-            collection, and receive smart care reminders. The app is designed
-            for plant lovers who want a beautiful, intuitive experience for
-            managing their indoor gardens. Comprehensive testing with Jest and
-            Playwright is planned to ensure reliability.
+            sprouthub is a full-stack plant care application built with Vite,
+            React, and TypeScript. The frontend delivers a responsive,
+            mobile-first experience using Tailwind CSS and shadcn-ui components.
+            Supabase provides robust authentication and real-time database
+            services, ensuring secure user accounts and instant data
+            synchronization.
+          </p>
+          <p>
+            Users can create multiple betting notebooks to organize different
+            strategies or sports, track individual wagers with custom fields,
+            and analyze performance through detailed analytics and calendar
+            views. The platform features advanced betting calculators for
+            arbitrage opportunities, parlay calculations, and unit-based betting
+            strategies. Interactive charts and profit/loss visualizations help
+            users identify trends and optimize their betting approach.
           </p>
           <a href="https://sprout-hub.com/" target="_blank" rel="noreferrer">
             <button className="px-8 py-2 mt-4 mr-8">Live Site</button>

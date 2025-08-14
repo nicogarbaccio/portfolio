@@ -32,7 +32,7 @@ function Experience() {
         </h2>
         {experience}
         <div className="flex justify-center py-12">
-          <Link href="../assets/resume.pdf" target="_blank">
+          <Link href="/assets/resume.pdf" target="_blank">
             <button className="px-8 py-2]">Download resume</button>
           </Link>
         </div>

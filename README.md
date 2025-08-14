@@ -1,27 +1,67 @@
-# Next.js + Tailwind CSS Example
+## Nico Garbaccio – Portfolio
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+Personal portfolio built with Next.js and Tailwind CSS and deployed on Netlify as a fully static site.
 
-## Deploy your own
+### Tech stack
+- **Framework**: Next.js 15 (React 18)
+- **Styling**: Tailwind CSS
+- **Icons**: react-icons
+- **Build output**: Static export (`output: 'export'`) → generated into the `out/` directory
+- **Images**: Next Image in unoptimized mode; assets live under `public/assets/...` and are referenced with absolute paths like `/assets/skills/react.png`
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
+### Local development
+Prerequisites: Node 18 (matches Netlify runtime) and npm.
 
 ```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+# 1) Clone your fork (replace <your-username> if needed)
+git clone https://github.com/<your-username>/portfolio.git
+cd portfolio
+
+# 2) Install dependencies
+npm ci   # or: npm install
+
+# 3) Run the dev server
+npm run dev
+# Open http://localhost:3000
 ```
+
+### Build and preview
+The site is exported as static HTML and assets into `out/`.
 
 ```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
+# Build a production static export
+npm run build
+
+# Preview the static export locally (pick one)
+npx serve out
+# or
+npx http-server out
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+### Deployment (Netlify)
+This project is deployed on Netlify. Configuration is captured in `netlify.toml`.
+
+- **Build command**: `npm run build`
+- **Publish directory**: `out`
+- **Environment**: `NODE_VERSION = 18`
+- **SPA fallback**: requests are rewritten to `/index.html` so client-side routes work
+
+You can deploy by connecting the repository in the Netlify UI or using the Netlify CLI.
+
+```bash
+# Optional: deploy from the CLI (after `netlify init`)
+netlify deploy --prod --dir=out
+```
+
+### Notes on images
+- Place image files in `public/assets/...`
+- Reference them by absolute path (e.g., `/assets/projects/SproutHub.png`) rather than importing from `public`
+- When using `next/image`, provide `width`/`height` or use `fill` as appropriate
+
+### Scripts
+- `npm run dev` – start the Next.js dev server
+- `npm run build` – build and export static site into `out/`
+- `npm start` – not used for static export (served from `out/` instead)
+
+### License
+This repository is for personal portfolio use. Feel free to fork and adapt for your own portfolio.

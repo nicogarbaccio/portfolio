@@ -9,6 +9,8 @@ function ProjectItem({ title, backgroundImg, stack, projectUrl }) {
         className="rounded-xl group-hover:opacity-10"
         src={backgroundImg}
         alt="/"
+        width={1200}
+        height={800}
       />
       {/* <Image src="/../public/assets/projects/ExplorED.png" alt="/" width="2000" height="1392" /> */}
       <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
