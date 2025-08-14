@@ -6,6 +6,31 @@
   NODE_VERSION = "18"
 
 [[redirects]]
+  from = "/sprouthub"
+  to = "/projects/sprouthub"
+  status = 301
+
+[[redirects]]
+  from = "/paperedge"
+  to = "/projects/paperedge"
+  status = 301
+
+[[redirects]]
+  from = "/thinx"
+  to = "/projects/thinx"
+  status = 301
+
+[[redirects]]
+  from = "/codenation"
+  to = "/projects/codenation"
+  status = 301
+
+[[redirects]]
+  from = "/funnelleasing"
+  to = "/projects/funnelleasing"
+  status = 301
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
