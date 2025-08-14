@@ -15,20 +15,7 @@
   to = "/projects/paperedge"
   status = 301
 
-[[redirects]]
-  from = "/thinx"
-  to = "/projects/thinx"
-  status = 301
 
-[[redirects]]
-  from = "/codenation"
-  to = "/projects/codenation"
-  status = 301
-
-[[redirects]]
-  from = "/funnelleasing"
-  to = "/projects/funnelleasing"
-  status = 301
 
 [[redirects]]
   from = "/*"
