@@ -1,4 +1,5 @@
 import ProjectItem from "./ProjectItem";
+import { projects } from "../data/projects";
 
 function Projects() {
   return (
@@ -8,18 +9,15 @@ function Projects() {
           Personal Projects
         </h2>
         <div className=" grid md:grid-cols-2 gap-8">
-          <ProjectItem
-            title="sprouthub"
-            backgroundImg="/assets/projects/SproutHub.png"
-            stack="TypeScript | React | Vite | Node.js | Express | Supabase"
-            projectUrl="/sprouthub"
-          />
-          <ProjectItem
-            title="PaperEdge"
-            backgroundImg="/assets/projects/paperedge.png"
-            stack="TypeScript | React | Vite | Node.js | Express | Supabase"
-            projectUrl="/paperedge"
-          />
+          {projects.map((p) => (
+            <ProjectItem
+              key={p.slug}
+              title={p.title}
+              backgroundImg={p.hero}
+              stack={p.tech.join(" | ")}
+              projectUrl={`/projects/${p.slug}`}
+            />
+          ))}
         </div>
       </div>
     </div>
