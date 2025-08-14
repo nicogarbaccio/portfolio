@@ -31,6 +31,7 @@ function sprouthub() {
             services, ensuring secure user accounts and instant data
             synchronization.
           </p>
+          <br />
           <p>
             Users can create multiple betting notebooks to organize different
             strategies or sports, track individual wagers with custom fields,
